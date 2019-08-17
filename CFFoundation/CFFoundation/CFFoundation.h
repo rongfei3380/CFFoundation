@@ -15,5 +15,11 @@ FOUNDATION_EXPORT double CFFoundationVersionNumber;
 FOUNDATION_EXPORT const unsigned char CFFoundationVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <CFFoundation/PublicHeader.h>
+#import <CocoaLumberjack/CocoaLumberjack.h>
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarning;
+#endif  /* DEBUG */
 
-
+  v
