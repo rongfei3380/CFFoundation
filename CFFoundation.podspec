@@ -99,7 +99,7 @@ Pod::Spec.new do |spec|
 
   spec.prefix_header_file = "CFFoundation/CFFoundation/CFFoundation.pch"
 
-  spec.public_header_files = "CFFoundation/CFFoundation/Classes/**/*.h"
+  spec.public_header_files = "CFFoundation/CFFoundation/*.h", "CFFoundation/CFFoundation/Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
