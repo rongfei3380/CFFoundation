@@ -94,9 +94,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "CFFoundation/CFFoundation/*.h", "CFFoundation/CFFoundation/Classes/**/*.{h,m}"
+  spec.source_files  = "CFFoundation/CFFoundation/CFFoundation.h", "CFFoundation/CFFoundation/Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
+  spec.prefix_header_file = true
   spec.prefix_header_file = "CFFoundation/CFFoundation/CFFoundation.pch"
 
   spec.public_header_files = "CFFoundation/CFFoundation/Classes/**/*.h"
