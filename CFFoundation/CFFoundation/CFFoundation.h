@@ -21,5 +21,3 @@ static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarning;
 #endif  /* DEBUG */
-
-  v
